@@ -53,20 +53,20 @@ export default function Header({
       <div className="home-icon-container" onClick={() => handleHome()}>
         <div className="home-icon">🌲</div>
       </div>
-      <div className="nav-link-container">
-        <div className="nav-link" onClick={() => handleAbout()}>
+      <ul className="nav-link-container">
+        <li className="nav-link" onClick={() => handleAbout()}>
           About
-        </div>
-        <div className="nav-link" onClick={() => handleResume()}>
-          Resume
-        </div>
-        <div className="nav-link" onClick={() => handleContact()}>
-          Contact
-        </div>
-        <div className="nav-link" onClick={() => handleProjects()}>
+        </li>
+        <li className="nav-link" onClick={() => handleProjects()}>
           Projects
-        </div>
-      </div>
+        </li>
+        <li className="nav-link" onClick={() => handleContact()}>
+          Contact
+        </li>
+        <li className="nav-link-resume" onClick={() => handleResume()}>
+          Resume
+        </li>
+      </ul>
     </header>
   );
 }
