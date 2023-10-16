@@ -1,0 +1,15 @@
+footer {
+  /* border: 10px solid #93e5ab; */
+  margin: 0;
+  position: relative;
+  background-color: darkgray;
+}
+
+footer img {
+  height: 5vw;
+}
+
+footer img:hover {
+  background-color: orange;
+  transition: background-color 1s ease-out;
+}
