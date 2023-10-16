@@ -34,7 +34,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="cinema-container">
-        <div className="project-header">CinemaScout</div>
+        <div className="project-header">Allegori</div>
         <div className="content-container">
           {allegori ? (
             <div className="desc" onClick={() => setAllegori(false)}>
@@ -50,7 +50,7 @@ export default function Projects() {
             <img
               onClick={() => setAllegori(true)}
               className="project-image"
-              src="/Screenshot 2023-10-15 161950.png"
+              src="/allegori.png"
             />
           )}
         </div>

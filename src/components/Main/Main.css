@@ -1,6 +1,7 @@
 main {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   /* border: 10px solid #93e5ab; */
   margin: 0;
