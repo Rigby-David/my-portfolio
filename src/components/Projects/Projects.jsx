@@ -13,7 +13,7 @@ export default function Projects() {
         <section className="project-image-container">
           <img
             className="project-image"
-            src="../../../public/Screenshot 2023-10-15 161950.png"
+            src="/Screenshot 2023-10-15 161950.png"
           />
         </section>
         <section className="carrot-container">
