@@ -5,11 +5,49 @@
     flex-direction: column;
     align-items: center;
     width: 100vh;
+    height: 100%;
+  }
+
+  .content-container {
+    position: relative;
+    z-index: 1;
+    width: 320px;
+    height: 360px;
   }
 
   .project-image {
     width: 320px;
     height: 360px;
+  }
+
+  .desc {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 320px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+  }
+
+  .project-header {
+    width: 320px;
+    background-color: darkgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    background-color: darkgray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .cinema-container {
+    margin: 20px;
   }
 }
 
