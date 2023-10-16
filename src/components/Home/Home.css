@@ -6,6 +6,7 @@
 
 .home-and-img {
   display: flex;
+  align-items: center;
 }
 
 .home h1 {

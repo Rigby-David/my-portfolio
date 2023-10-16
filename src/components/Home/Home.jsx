@@ -10,6 +10,10 @@ export default function Home() {
     setTimeout(() => {
       setTime(time + 1);
     }, 5000);
+
+    if (time >= 2) {
+      setTime(0);
+    }
   }
 
   textTimer();

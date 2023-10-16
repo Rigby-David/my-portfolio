@@ -1,4 +1,6 @@
 main {
+  display: flex;
+  align-items: center;
   height: 75vh;
   /* border: 10px solid #93e5ab; */
   margin: 0;
