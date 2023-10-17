@@ -1,3 +1,57 @@
+.project-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 40px;
+  color: black;
+  font-size: x-large;
+  font-weight: 800;
+  background-color: darkgray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.project-image {
+  width: 320px;
+  height: 360px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: 40px;
+  background-color: darkgray;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  height: 360px;
+}
+
+.desc {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 320px;
+  height: 360px;
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+}
+
 /* Mobile view */
 @media (max-width: 600px) {
   .projects-page {
@@ -8,64 +62,20 @@
     height: 100%;
   }
 
-  .content-container {
-    position: relative;
-    z-index: 1;
-    width: 320px;
-    height: 360px;
-  }
-
-  .project-image {
-    width: 320px;
-    height: 360px;
-  }
-
-  .desc {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    width: 320px;
-    height: 360px;
-    background-color: rgba(0, 0, 0, 0.89);
-    color: white;
-  }
-
-  .project-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 40px;
-    color: black;
-    font-size: x-large;
-    font-weight: 800;
-    background-color: darkgray;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 320px;
-    height: 40px;
-    background-color: darkgray;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-
-  .links a {
-    color: black;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: 700;
-  }
-
-  .cinema-container {
+  .project-container {
     margin: 20px;
   }
 }
 
+/* Desktop view */
 @media (min-width: 600px) {
+  .projects-page {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .project-container {
+    margin: 3em;
+  }
 }

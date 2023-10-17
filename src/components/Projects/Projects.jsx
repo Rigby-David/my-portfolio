@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
     <div className="projects-page">
-      <div className="cinema-container">
+      <div className="project-container">
         <div className="project-header">CinemaScout</div>
         <div className="content-container">
           {cinemaScout ? (
@@ -34,7 +34,7 @@ export default function Projects() {
           <a href="">Live Link</a>
         </div>
       </div>
-      <div className="cinema-container">
+      <div className="project-container">
         <div className="project-header">Allegori</div>
         <div className="content-container">
           {allegori ? (
@@ -60,7 +60,7 @@ export default function Projects() {
           <a href="">Live Link</a>
         </div>
       </div>
-      <div className="cinema-container">
+      <div className="project-container">
         <div className="project-header">Printstagram</div>
         <div className="content-container">
           {prints ? (
