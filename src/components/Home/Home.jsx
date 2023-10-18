@@ -4,8 +4,6 @@ import "./Home.css";
 export default function Home() {
   const [time, setTime] = useState(0);
 
-  //after 'time', display textTimer text.
-
   function textTimer() {
     setTimeout(() => {
       setTime(time + 1);
@@ -29,10 +27,7 @@ export default function Home() {
           <section className="home-greeting-text">
             {time === 0 && (
               <span>
-                <em>
-                  I&apos;m a results-oriented problem-solver, collaborator, and
-                  creator.
-                </em>
+                <em>I&apos;m a problem-solver</em>
               </span>
             )}
             {time === 1 && (
