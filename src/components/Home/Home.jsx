@@ -41,7 +41,7 @@ export default function Home() {
             </span>
           </section>
         </div>
-        <img src="../../../public/head-shot.jpg" />
+        <img src="/DavidToot.jpg" />
       </div>
     </>
   );
