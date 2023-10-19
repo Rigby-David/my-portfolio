@@ -1,41 +1,77 @@
-.home {
+/* .home {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+  justify-content: space-between;
+} */
 
 .home-and-img {
+  margin-top: 1em;
   display: flex;
-  align-items: center;
 }
 
-.home h1 {
-  height: 10vh;
-  font-size: 7rem;
-  font-weight: 700;
-}
-
-.home h3 {
-  display: flex;
-  justify-content: center;
+/* .home h1 {
+  font-family: "Roboto Mono";
+  font-weight: 100;
   font-size: 3rem;
-  font-weight: 400;
-  font-style: italic;
   margin: 0;
-}
-
-.home-h1 {
-  display: flex;
-  justify-content: space-evenly;
-}
+} */
 
 .home-greeting-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 img {
-  height: 35vw;
+  height: 360px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    display: flex;
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .home h3 {
+    font-family: "Roboto Mono";
+    font-size: large;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .name-role {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  .home-greeting-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 3em;
+    margin-bottom: 1em;
+  }
+
+  span {
+    font-family: "Roboto Mono";
+    font-size: small;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .home {
+    display: flex;
+    height: 70vh;
+  }
 }
