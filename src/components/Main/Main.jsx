@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import About from "../About";
+import About from "../About/About";
 import Contact from "../Contact";
 import Home from "../Home/Home";
 import "./Main.css";

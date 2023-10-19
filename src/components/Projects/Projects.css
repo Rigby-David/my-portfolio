@@ -69,6 +69,7 @@
   .projects-page {
     display: flex;
     justify-content: space-around;
+    font-family: "Roboto Mono";
     width: 100%;
   }
 

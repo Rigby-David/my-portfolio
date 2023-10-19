@@ -7,24 +7,26 @@ footer {
   padding-top: 1.3em;
 }
 
-footer img {
-  height: 5vw;
-}
-
 .link-container {
   display: flex;
   justify-content: space-evenly;
-  width: 320px;
+  width: 50vw;
   height: 5vw;
 }
 
-footer img:hover {
+/* footer img:hover {
   background-color: orange;
   transition: background-color 1s ease-out;
+} */
+
+@media (max-width: 599px) {
+  footer img {
+    height: 5vw;
+  }
 }
 
 @media (min-width: 600px) {
   footer img {
-    height: 3em;
+    height: 3vw;
   }
 }

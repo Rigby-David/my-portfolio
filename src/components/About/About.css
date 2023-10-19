@@ -1,0 +1,6 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  width: 100%;
+}
