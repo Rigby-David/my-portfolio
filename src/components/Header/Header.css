@@ -8,20 +8,17 @@
   background-color: #f5f5f5;
   font-family: "Roboto Mono";
   font-size: large;
-  /* width: 100vw; */
 }
 
 .home-icon-container {
   display: flex;
   align-items: center;
+  margin: 1em;
 }
 
 .home-icon {
   display: flex;
   justify-content: center;
-  /* font-size: larger; */
-  /* margin: 5px; */
-  /* width: 60px; */
   cursor: pointer;
   font-weight: 700;
   border-bottom: 1px solid black;
@@ -30,14 +27,12 @@
 .nav-link-container {
   display: flex;
   justify-content: space-evenly;
-  /* width: 50vw; */
+  margin: 1em;
 }
 
 .nav-link {
   display: flex;
   justify-content: center;
-  /* margin: 5px; */
-  /* width: 60px; */
   position: relative;
   cursor: pointer;
   overflow: hidden;

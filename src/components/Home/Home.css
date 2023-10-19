@@ -1,21 +1,15 @@
-/* .home {
+.home {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
-} */
+  font-family: "Roboto Mono";
+  height: 70vh;
+  width: 100%;
+}
 
 .home-and-img {
   margin-top: 1em;
   display: flex;
 }
-
-/* .home h1 {
-  font-family: "Roboto Mono";
-  font-weight: 100;
-  font-size: 3rem;
-  margin: 0;
-} */
 
 .home-greeting-text {
   display: flex;
@@ -28,6 +22,14 @@ img {
   height: 360px;
 }
 
+/* Desktop view */
+@media (min-width: 600px) {
+  .home {
+    margin: 1em;
+  }
+}
+
+/* Mobile view */
 @media (max-width: 600px) {
   h1 {
     display: flex;
@@ -62,7 +64,6 @@ img {
   }
 
   span {
-    font-family: "Roboto Mono";
     font-size: small;
   }
 
@@ -71,7 +72,6 @@ img {
   }
 
   .home {
-    display: flex;
     height: 70vh;
   }
 }

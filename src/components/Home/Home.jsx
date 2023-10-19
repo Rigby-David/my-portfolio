@@ -32,18 +32,10 @@ export default function Home() {
           <span>offers while making</span>
           <span>sure to keep things</span>
           <span>fun and exciting.</span>
-          {/* <span>I thrive on</span>
-          <span>
-            <strong>adaptability</strong>, and
-          </span>
-          <span>I&apos;m always</span>
-          <span>eager to experiment</span>
-          <span>with new ideas.</span> */}
           <span>
             <strong>Welcome to my portfolio!</strong>
           </span>
         </section>
-        <img src="/DavidToot.jpg" className="profile-pic" />
       </div>
     </>
   );
