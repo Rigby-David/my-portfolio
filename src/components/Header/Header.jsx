@@ -47,17 +47,17 @@ export default function Header({
       </div>
       <ul className="nav-link-container">
         <li className="nav-link" onClick={() => handleAbout()}>
-          About
+          about
         </li>
         <li className="nav-link" onClick={() => handleProjects()}>
-          Projects
+          projects
         </li>
         <li className="nav-link" onClick={() => handleContact()}>
-          Contact
+          contact
         </li>
         <li className="nav-link">
           <a href="https://drive.google.com/file/d/1X0QDr7aSq8WyBFw8iAN8g7iN6ibXBK-v/view?usp=drive_link">
-            Resume
+            resume
           </a>
         </li>
       </ul>
