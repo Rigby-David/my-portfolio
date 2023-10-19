@@ -1,11 +1,11 @@
 /* Mobile view */
 @media (max-width: 600px) {
   footer {
-    margin: 0;
     position: relative;
     background-color: darkgray;
     display: flex;
     justify-content: center;
+    /* width: 100vw; */
   }
 
   footer img {

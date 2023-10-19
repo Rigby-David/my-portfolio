@@ -58,8 +58,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vh;
-    height: 100%;
+    /* width: 100vw;
+    height: 100vh; */
   }
 
   .project-container {
