@@ -2,9 +2,11 @@
 @media (max-width: 600px) {
   footer {
     position: relative;
-    background-color: darkgray;
+    border-top: 4px solid darkgray;
     display: flex;
     justify-content: center;
+    height: 5vw;
+    padding-top: 1.3em;
     /* width: 100vw; */
   }
 
@@ -16,7 +18,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 320px;
-    background-color: darkgray;
+    height: 5vw;
+    /* border-top: 1px solid darkgray; */
   }
 }
 

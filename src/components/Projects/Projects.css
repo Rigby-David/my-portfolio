@@ -7,9 +7,10 @@
   color: black;
   font-size: x-large;
   font-weight: 800;
-  background-color: darkgray;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom: 4px solid darkgray;
+  margin-bottom: 0.5em;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
 }
 
 .project-image {
@@ -23,9 +24,10 @@
   align-items: center;
   width: 320px;
   height: 40px;
-  background-color: darkgray;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top: 4px solid darkgray;
+  margin-top: 0.5em;
+  /* border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
 }
 
 .links a {
