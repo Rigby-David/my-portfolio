@@ -6,65 +6,42 @@
   top: 0;
   z-index: 2;
   background-color: #f5f5f5;
+  font-family: "Roboto Mono";
   font-size: large;
-  /* width: 100vw; */
 }
 
 .home-icon-container {
   display: flex;
   align-items: center;
+  margin: 1em;
 }
 
 .home-icon {
   display: flex;
   justify-content: center;
-  font-size: larger;
-  margin: 5px;
-  width: 60px;
   cursor: pointer;
   font-weight: 700;
-  border: 2px solid black;
-  border-radius: 5px;
-  /* border-bottom: 10px solid #93e5ab; */
-}
-
-.home-icon:hover {
-  background-color: orange;
-  transition: background-color 1s ease-out;
+  border-bottom: 1px solid black;
 }
 
 .nav-link-container {
   display: flex;
   justify-content: space-evenly;
-  width: 50vw;
+  margin: 1em;
 }
 
 .nav-link {
   display: flex;
   justify-content: center;
-  margin: 5px;
-  width: 60px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   border-bottom: 1px solid black;
   font-weight: 700;
+  margin: 0.3em;
 }
 
-.nav-link-resume {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  width: 60px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  font-weight: 700;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.nav-link-resume a {
+.nav-link a {
   text-decoration: none;
   color: black;
 }

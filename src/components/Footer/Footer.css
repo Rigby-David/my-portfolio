@@ -1,32 +1,32 @@
-/* Mobile view */
-@media (max-width: 600px) {
-  footer {
-    position: relative;
-    background-color: darkgray;
-    display: flex;
-    justify-content: center;
-    /* width: 100vw; */
-  }
+footer {
+  position: relative;
+  border-top: 4px solid darkgray;
+  display: flex;
+  justify-content: center;
+  height: 5vw;
+  padding-top: 1.3em;
+}
 
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 5vw;
+}
+
+/* footer img:hover {
+  background-color: orange;
+  transition: background-color 1s ease-out;
+} */
+
+@media (max-width: 599px) {
   footer img {
     height: 5vw;
   }
-
-  .link-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 320px;
-    background-color: darkgray;
-  }
-}
-
-footer img:hover {
-  background-color: orange;
-  transition: background-color 1s ease-out;
 }
 
 @media (min-width: 600px) {
   footer img {
-    height: 5vw;
+    height: 3vw;
   }
 }
