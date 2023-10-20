@@ -12,14 +12,14 @@ export default function About() {
           contributions will transform the world around me into a dynamic and
           accessible place for all.
         </div>
-        <div className="about-personal">
-          When I&apos;m not coding, you can find me at my local disc golf
-          course, reading a fantasy novel, or working in my yard. Now, please
-          enjoy this photo of my 9 month old lab mix, Petunia, doing a big blep.
-        </div>
       </div>
       <div className="about-image">
         <img src="/DavidToot.jpg" className="profile-pic" />
+      </div>
+      <div className="about-personal">
+        When I&apos;m not coding, you can find me at my local disc golf course,
+        reading a fantasy novel, or working in my yard. Now, please enjoy this
+        photo of my 9 month old lab mix, Petunia, doing a big blep.
       </div>
     </div>
   );
