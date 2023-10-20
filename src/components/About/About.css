@@ -5,10 +5,13 @@
   margin: 1em;
   width: 100%;
 }
+
 .about-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: left;
+
   width: 50vw;
 }
 
@@ -20,6 +23,22 @@
 
 .profile-pic {
   width: 360px;
-  height: 600px;
   border-radius: 45%;
+}
+
+@media (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .profile-pic {
+    width: 290px;
+  }
 }
