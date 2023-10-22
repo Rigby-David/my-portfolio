@@ -1,6 +1,71 @@
 .about {
+  font-family: "Roboto Mono";
   display: flex;
   justify-content: space-between;
   margin: 1em;
   width: 100%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+
+  width: 25vw;
+}
+
+.about-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  width: 360px;
+  border-radius: 45%;
+}
+
+@media (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 290px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .about-personal {
+    text-align: left;
+  }
+}
+
+@media (min-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-info {
+    order: 1;
+    height: 25vw;
+  }
+  .about-image {
+    order: 2; /* Placing div2 in the middle */
+    align-self: flex-end;
+    position: absolute;
+  }
+
+  .about-personal {
+    order: 3; /* Placing div3 at the bottom */
+    width: 25vw;
+    text-align: left;
+  }
 }
