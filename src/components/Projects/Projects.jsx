@@ -5,6 +5,7 @@ export default function Projects() {
   const [cinemaScout, setCinemaScout] = useState(false);
   const [allegori, setAllegori] = useState(false);
   const [prints, setPrints] = useState(false);
+  const [booBot, setBooBot] = useState(false);
   const [showClickEvent, setShowClickEvent] = useState(false);
 
   console.log("showClickEvent", showClickEvent);
@@ -25,115 +26,188 @@ export default function Projects() {
               {showClickEvent ? (
                 cinemaScout ? (
                   <div className="desc" onClick={() => setCinemaScout(false)}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Are you looking to discover your next favorite film or
+                    television series? Using The Movie Database&apos;s RESTful
+                    api, CinemaScout provides search functionality and a
+                    discover feature to help you find your next watch. Built
+                    with React and a whole lot of state management, this project
+                    renders all components conditionally providing a smooth
+                    user-friendly experience.
                   </div>
                 ) : (
                   <img
                     onClick={() => setCinemaScout(true)}
                     className="project-image"
                     src="/Screenshot 2023-10-15 161950.png"
+                    alt="CinemaScout"
                   />
                 )
               ) : (
                 <img
-                  onClick={() => setCinemaScout(true)}
                   className="project-image"
                   src="/Screenshot 2023-10-15 161950.png"
+                  alt="CinemaScout"
+                  title="CinemaScout"
                 />
               )}
             </div>
             <div className="links">
-              <a href="">Code</a>
-              <a href="">Live Link</a>
+              <a href="https://github.com/SebastianAndDavid/CinemaScout">
+                Code
+              </a>
+              <a href="https://spectacular-tiramisu-215e52.netlify.app/">
+                Live Link
+              </a>
             </div>
           </div>
           {!showClickEvent && (
             <div className="descript">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Are you looking to discover your next favorite film or television
+              series? Using The Movie Database&apos;s RESTful api, CinemaScout
+              provides search functionality and a discover feature to help you
+              find your next watch. Built with React and a whole lot of state
+              management, this project renders all components conditionally
+              providing a smooth user-friendly experience.
             </div>
           )}
         </div>
-        <div className="project-container">
-          <div className="project-header">Allegori</div>
-          <div className="content-container">
-            {showClickEvent ? (
-              allegori ? (
-                <div className="desc" onClick={() => setAllegori(false)}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
+        <div className="project-and-descript">
+          {!showClickEvent && (
+            <div className="descript">
+              Allegori is an meme-generating AI that dynamically seeds a bespoke
+              RESTful API and suggests memes based on user input using the
+              Imagga API.
+            </div>
+          )}
+          <div className="project-container">
+            <div className="project-header">Allegori</div>
+            <div className="content-container">
+              {showClickEvent ? (
+                allegori ? (
+                  <div className="desc" onClick={() => setAllegori(false)}>
+                    Allegori is an meme-generating AI that dynamically seeds a
+                    bespoke RESTful API and suggests memes based on user input
+                    using the Imagga API.
+                  </div>
+                ) : (
+                  <img
+                    onClick={() => setAllegori(true)}
+                    className="project-image"
+                    src="/allegori.png"
+                    alt="Allegori"
+                    title="Allegori"
+                  />
+                )
               ) : (
                 <img
-                  onClick={() => setAllegori(true)}
                   className="project-image"
                   src="/allegori.png"
+                  alt="Allegori"
+                  title="Allegori"
                 />
-              )
-            ) : (
-              <img
-                onClick={() => setAllegori(true)}
-                className="project-image"
-                src="/allegori.png"
-              />
-            )}
-          </div>
-          <div className="links">
-            <a href="">Code</a>
-            <a href="">Live Link</a>
+              )}
+            </div>
+            <div className="links">
+              <a href="https://github.com/orgs/meme-t3am/repositories">Code</a>
+              {/* <a href="">Live Link</a> */}
+            </div>
           </div>
         </div>
-        <div className="project-container">
-          <div className="project-header">Printstagram</div>
-          <div className="content-container">
-            {showClickEvent ? (
-              prints ? (
-                <div className="desc" onClick={() => setPrints(false)}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
+        <div className="project-and-descript">
+          <div className="project-container">
+            <div className="project-header">Printstagram</div>
+            <div className="content-container">
+              {showClickEvent ? (
+                prints ? (
+                  <div className="desc" onClick={() => setPrints(false)}>
+                    A mobile-first Instagram clone powered by the Petfinder API
+                    that acts as social media for animals that are currently up
+                    for adoption.
+                  </div>
+                ) : (
+                  <img
+                    onClick={() => setPrints(true)}
+                    className="project-image"
+                    src="/prints.png"
+                    alt="Printstagram"
+                    title="Printstagram"
+                  />
+                )
               ) : (
                 <img
-                  onClick={() => setPrints(true)}
                   className="project-image"
                   src="/prints.png"
+                  alt="Printstagram"
+                  title="Printstagram"
                 />
-              )
-            ) : (
-              <img
-                onClick={() => setPrints(true)}
-                className="project-image"
-                src="/prints.png"
-              />
-            )}
+              )}
+            </div>
+            <div className="links">
+              <a href="https://github.com/Printstagram/Printstagram">Code</a>
+              <a href="https://printstagram.netlify.app/sign-in">Live Link</a>
+            </div>
           </div>
-          <div className="links">
-            <a href="">Code</a>
-            <a href="">Live Link</a>
+          {!showClickEvent && (
+            <div className="descript">
+              A mobile-first Instagram clone powered by the Petfinder API that
+              acts as social media for animals that are currently up for
+              adoption.
+            </div>
+          )}
+        </div>
+        <div className="project-and-descript">
+          {!showClickEvent && (
+            <div className="descript">
+              boo!BOT, your haunted enCounter, is a VS Code extension that was
+              designed for those among us who are perpetually waiting for summer
+              to come to an end and cold misty days to return. boo!BOT provides
+              a daily countdown to Halloween - in a pop-up on launch as well as
+              in your status bar - along with randomly generated ghoulish facts
+              and festively haunting links - fetched from boo!BOT&apos;s very
+              own API - via recurring pop-ups in your VS Code window.
+            </div>
+          )}
+          <div className="project-container">
+            <div className="project-header">boo!BOT</div>
+            <div className="content-container">
+              {showClickEvent ? (
+                booBot ? (
+                  <div className="desc" onClick={() => setBooBot(false)}>
+                    boo!BOT, your haunted enCounter, is a VS Code extension that
+                    was designed for those among us who are perpetually waiting
+                    for summer to come to an end and cold misty days to return.
+                    boo!BOT provides a daily countdown to Halloween - in a
+                    pop-up on launch as well as in your status bar - along with
+                    randomly generated ghoulish facts and festively haunting
+                    links - fetched from boo!BOT&apos;s very own API - via
+                    recurring pop-ups in your VS Code window.
+                  </div>
+                ) : (
+                  <img
+                    onClick={() => setBooBot(true)}
+                    className="project-image"
+                    src="/boobot.png"
+                    alt="boo!Bot"
+                    title="boo!BOT"
+                  />
+                )
+              ) : (
+                <img
+                  className="project-image"
+                  src="/boobot.png"
+                  alt="boo!Bot"
+                  title="boo!BOT"
+                />
+              )}
+            </div>
+            <div className="links">
+              <a href="https://github.com/orgs/boo-BOT-Team/repositories">
+                Code
+              </a>
+              <a href="https://marketplace.visualstudio.com/items?itemName=booatthebot.booBOT">
+                Live Link
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -29,6 +29,12 @@
   width: 50%;
 }
 
+@media (min-width: 600px) {
+  .contact {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 600px) {
   .contact {
     display: flex;

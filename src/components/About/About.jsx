@@ -14,7 +14,7 @@ export default function About() {
         </div>
       </div>
       <div className="about-image">
-        <img src="/DavidToot.jpg" className="profile-pic" />
+        <img src="/me.jpg" className="profile-pic" />
       </div>
       <div className="about-personal">
         When I&apos;m not coding, you can find me at my local disc golf course,
