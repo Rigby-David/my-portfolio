@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-
   width: 25vw;
 }
 
@@ -23,7 +22,7 @@
 
 .profile-pic {
   width: 360px;
-  border-radius: 45%;
+  /* border-radius: 45%; */
 }
 
 @media (max-width: 600px) {
@@ -51,21 +50,51 @@
   .about {
     flex-direction: column;
     align-items: flex-start;
+    height: 70vh;
   }
 
   .about-info {
     order: 1;
     height: 25vw;
   }
+
   .about-image {
     order: 2; /* Placing div2 in the middle */
     align-self: flex-end;
     position: absolute;
   }
 
+  .profile-pic {
+    height: 580px;
+  }
+
   .about-personal {
     order: 3; /* Placing div3 at the bottom */
     width: 25vw;
     text-align: left;
+  }
+}
+
+@media (max-width: 1880px) {
+  .profile-pic {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .profile-pic {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .profile-pic {
+    height: 450px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .profile-pic {
+    height: 400px;
   }
 }

@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
 import "./About.css";
 
 export default function About() {
+  const [pic, setPic] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth <= 600 ? setPic(true) : setPic(false);
+  }, []);
+
   return (
     <div className="about">
       <div className="about-info">
@@ -14,7 +21,11 @@ export default function About() {
         </div>
       </div>
       <div className="about-image">
-        <img src="/DavidToot.jpg" className="profile-pic" />
+        {pic ? (
+          <img src="/DavidToot.jpg" className="profile-pic" />
+        ) : (
+          <img src="/me.jpg" className="profile-pic" />
+        )}
       </div>
       <div className="about-personal">
         When I&apos;m not coding, you can find me at my local disc golf course,
