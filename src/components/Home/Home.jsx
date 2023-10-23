@@ -6,7 +6,12 @@ export default function Home() {
       <div className="home">
         <section className="name-role">
           <h1>David Rigby</h1>
-          <h3>Software Engineer</h3>
+          {/* <h3>Software Engineer</h3> */}
+          <img
+            src="/DavidToot.jpg"
+            className="david-toot"
+            alt="Profile picture"
+          />
         </section>
         <section className="home-greeting-text">
           <span>

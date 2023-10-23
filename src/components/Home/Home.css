@@ -41,6 +41,16 @@ h3 {
   .home {
     margin: 1em;
   }
+
+  .name-role {
+    justify-content: space-between;
+  }
+
+  .name-role .david-toot {
+    height: 50vh;
+    /* margin-top: 7.5em; */
+    border-radius: 10%;
+  }
 }
 
 /* Mobile view */
@@ -63,28 +73,15 @@ h3 {
     bottom: 0;
   }
 
+  .david-toot {
+    display: none;
+  }
+
   span {
     font-size: small;
   }
-
-  /* .profile-pic {
-    display: none;
-  } */
 
   .home {
     height: 70vh;
   }
 }
-/* @media (max-width: 600px)
-<style>
-.home-greeting-text {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin-right: 3em;
-    margin-bottom: 6em;
-    right: 0;
-    bottom: 0;
-} */
